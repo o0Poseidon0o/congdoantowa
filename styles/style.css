@@ -253,6 +253,16 @@
 #important_action {
   margin: 10px;
 }
+.import_action_content img {
+  width: 350px;
+}
+.import_action_content {
+  margin-top: 30px;
+}
+.import_action_content p {
+  text-align: justify;
+  text-indent: 10px;
+}
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
@@ -542,4 +552,9 @@
   .breadcrumbs ol li {
     display: inline-block;
   }
+}
+/* Nội dung team */
+.teams-title p {
+  text-align: justify;
+  text-indent: 20px;
 }

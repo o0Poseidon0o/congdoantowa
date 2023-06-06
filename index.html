@@ -19,7 +19,8 @@
   </head>
   <body>
     <!-- ------------------header----------------- -->
-    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+    <i id="mobile-nav-toggle" class="bi bi-list mobile-nav-toggle"></i>
+
     <!-- ======= Header ======= -->
     <header id="header">
       <div class="d-flex flex-column">
@@ -50,12 +51,13 @@
             </li>
             <li>
               <a href="#teams" class="nav-link scrollto"
-                ><i class="bi bi-award"></i><span>Team hoạt động</span></a
+                ><i class="bi bi-award"></i><span>Ban chấp hành</span></a
               >
             </li>
             <li>
               <a href="#important_action" class="nav-link scrollto"
-                ><i class="bi bi-alarm"></i> <span>Hoạt động trọng tâm</span></a
+                ><i class="bi bi-alarm"></i>
+                <span>Hoạt động sắp diễn ra</span></a
               >
             </li>
             <li>
@@ -105,9 +107,12 @@
     <main id="main">
       <section id="teams">
         <div class="container-fluid">
-          <div class="teams-title">
+          <div class="container-fluid teams-title">
             <h2>BAN CHẤP HÀNH CÔNG ĐOÀN</h2>
-            <p>Quyeert tâm thực hiện sân chơi lành mạnh cho công đoàn viên</p>
+            <p>
+              Công đoàn có vai trò quan trọng trong việc đại diện, bảo vệ quyền
+              và lợi ích hợp pháp, chính đáng của người lao động.
+            </p>
           </div>
           <div
             id="teamsCarousel"
@@ -118,25 +123,31 @@
               <div class="carousel-item active">
                 <div class="teams-item">
                   <p>Quyết tâm thực những việc tốt mỗi ngày</p>
-                  <img src="./img/ducduy.PNG" alt="" />
-                  <h3>Nguyễn Đức Duy</h3>
-                  <h4>&amp; Chủ tịch công đoàn &amp;</h4>
+                  <img src="./img/BCH/ducduy.PNG" alt="" />
+                  <div class="m-3">
+                    <h3>Nguyễn Đức Duy</h3>
+                    <h4>&amp; Chủ tịch công đoàn &amp;</h4>
+                  </div>
                 </div>
               </div>
               <div class="carousel-item">
                 <div class="teams-item">
                   <p>Quyết tâm thực những việc tốt mỗi ngày</p>
-                  <img src="./img/hoangnga.PNG" alt="" />
-                  <h3>Nguyễn Hoàng Nga</h3>
-                  <h4>&amp; P.Chủ tịch công đoàn &amp;</h4>
+                  <img src="./img/BCH/hoangnga.PNG" alt="" />
+                  <div class="m-3">
+                    <h3>Nguyễn Hoàng Nga</h3>
+                    <h4>&amp; P.Chủ tịch công đoàn &amp;</h4>
+                  </div>
                 </div>
               </div>
               <div class="carousel-item">
                 <div class="teams-item">
                   <p>Quyết tâm thực những việc tốt mỗi ngày</p>
-                  <img src="./img/caothang.PNG" alt="" />
-                  <h3>Cao Thăng</h3>
-                  <h4>&amp; P. Chủ tịch công đoàn &amp;</h4>
+                  <img src="./img/BCH/caothang.PNG" alt="" />
+                  <div class="m-3">
+                    <h3>Cao Thăng</h3>
+                    <h4>&amp; P. Chủ tịch công đoàn &amp;</h4>
+                  </div>
                 </div>
               </div>
             </div>
@@ -170,37 +181,48 @@
       <section id="important_action">
         <div class="container-fluid">
           <div class="container-fluid import_action_tittle">
-            <h2>HOẠT ĐỘNG TRUNG THU</h2>
-            <p>
-              Tham quan 2 điểm lịch sử là
-              <strong>Bảo tàng chứng tích chiến tranh</strong> và
-              <strong>Bảo tàng chứng tích chiến tranh</strong>
-            </p>
-
-            <p></p>
-            <p>Mục đích cho dành cho các bạn thiếu nhi biết thêm lịch sử</p>
+            <h1>HOẠT ĐỘNG TRUNG THU</h1>
+            <h3>Câu truyện cổ tích về trung thu</h3>
           </div>
           <div class="container-fluid import_action_content">
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4">
                   <img
-                    src="./img/baotang.jpg"
-                    alt="baotangchungtichchientranh"
+                    src="./img/hoatdong/chu_cuoi.jpg"
+                    alt="chu_cuoi"
                     class="img-fluid rounded-4 shadow-sm"
                   />
                 </div>
                 <div class="col-md-8">
                   <p>
-                    Thời nhà Nguyễn, vị trí của Bảo tàng chứng tích chiến tranh
-                    là nơi xây dựng chùa Khải Tường. Tới thời Pháp xây lược,
-                    ngôi chùa đã bị chính quyền Pháp phá bỏ hoàn toàn để thay
-                    thế vào đó là căn biệt thự. Trong khoảng thời gian sau đó,
-                    nơi đây đã trở thành bệnh viện sản phụ khoa, văn phòng luật
-                    sư,… Chỉ tới sau 1975, khi đất nước được giải phóng khỏi tay
-                    đế quốc Mĩ thì nơi đây trở thành bảo tàng, ghi lại những sự
-                    kiện lịch sử, dấu vết chiến tranh hay trưng bày những hiện
-                    vật liên quan tới cuộc chiến chống giặc xâm lược.
+                    Ở miền nọ có một chàng tiều phu tên Cuội. Một lần đi rừng
+                    vào nhầm hang cọp, Cuội giật bắn mình leo thoắt lên ngọn cây
+                    cao trốn. Cọp mẹ về hang thấy đàn con chết lả vì đói liền đi
+                    đến gốc cây gần chỗ Cuội ẩn đớp lấy một ít lá mang về mớm.
+                    Kỳ lạ thay, chưa đầy ăn giập miếng trầu, 4 chú cọp con quẫy
+                    đuôi sống lại. Chờ cọp mẹ tha con đi nơi khác, Cuội mới tìm
+                    cây lạ đào gốc mang về. Dọc đường đi, Cuội gặp lão ăn mày
+                    nằm chết trên bãi cỏ. Không ngần ngại, Cuội bứt ngay mấy lá
+                    cứu giúp ông lão đã thoát cửa tử. Nghe Cuội kể đầu đuôi, ông
+                    kêu lên: </br>- Đây là cây đa có phép "cải tử hoàn sinh". Con
+                    chăm sóc cây đừng tưới nước bẩn kẻo cây bay lên trời đó.</br> Từ
+                    ngày có cây thuốc quý, Cuội cứu sống được rất nhiều người
+                    người. Ai ai cũng kính nể. Một lần, Cuội cứu sống cô con gái
+                    sảy chân chết đuối cho lão địa chủ. Nét mặt hồng hào, sự
+                    sống quay trở lại, cô xin lấy Cuội làm chồng. Đôi lứa xứng
+                    đôi hưởng những tháng ngày hạnh phúc. Ngặt một nỗi, cô vợ có
+                    tính hay quên.<strong>Những khi đi làm xa, Cuội dặn "có tiểu thì đi
+                      bên Tây, chớ tiểu bên Đông, cây dông lên trời"</strong>  mà cô vợ như
+                    lú lẫn ruột gan, vừa nghe xong là quên ngay.</br> Một chiều, cô
+                    vợ không nhớ lời dặn cứ nhắm vào cây quý tiểu. Bỗng nhiên
+                    mặt đất chuyển động, gió thổi ào ào, cây đa đảo mạnh, bật
+                    gốc phi lên trời xanh. Vừa lúc Cuội đi kiếm củi về, hớt hải
+                    nhảy bổ đến níu cây lại. Nhưng sức người có hạn, cây đa kéo
+                    cả Cuội cứ thế bay lên cung trăng. Từ đấy, cứ mỗi dịp ngày
+                    rằm, ánh trăng sáng nhất, khi ngước nhìn lên, người ta thấy
+                    một vết đen hình cây cổ thụ có người ngồi dưới gốc. Đó chính
+                    là chú Cuội đang chờ ngày được trở về trần gian.
                   </p>
                 </div>
               </div>
@@ -208,40 +230,25 @@
           </div>
           <div class="container-fluid import_action_content">
             <div class="row">
-              <div class="col-md-8">
-                <p>
-                  Dinh Độc Lập, còn gọi là Dinh Thống Nhất, được xây dựng trên
-                  dinh Norodom, tượng trưng cho triết lý truyền thống, nghi lễ
-                  phương Đông và cá tính của dân tộc Việt Nam trong sự kết hợp
-                  hài hòa với kiến trúc hiện đại. Đây là một công trình kiến
-                  trúc đặc biệt và lâu đời của Sài Gòn, là cơ quan đầu não của
-                  chính phủ trong thời kỳ chiến tranh. Đây là địa điểm mang ý
-                  nghĩa lịch sử lớn lao vào ngày giải phóng miền Nam thống nhất
-                  đất nước năm 1975. Dinh Độc Lập nằm tại địa chỉ số 135 Nam Kỳ
-                  Khởi Nghĩa, phường Bến Nghé, quận 1, Hồ Chí Minh với mặt sau
-                  là đường Huyền Trân Công Chúa, mặt trái là đường Nguyễn Thị
-                  Minh Khai và mặt phải là đường Nguyễn Du. Dinh tọa lạc ngay vị
-                  trí trung tâm thành phố rất thuận tiện đi lại nên du khách có
-                  thể di chuyển tới đây rất dễ dàng bằng những phương tiện thông
-                  thường. Dinh Độc Lập mở cửa đón du khách tham quan vào tất cả
-                  các ngày trong tuần, kể cả lễ, Tết (trừ những dịp trọng đại).
-                  Giờ tham quan buổi sáng từ 7h30 đến 11h30, buổi chiều từ 13h
-                  đến 17h. Nếu có ý định ghé thăm, bạn hãy sắp xếp thời gian hợp
-                  lý. Tới đây, du khách thường tản bộ ngắm nhìn kiến trúc đặc
-                  sắc vẫn được giữ vững qua rất nhiều năm của Dinh cùng những
-                  khu trưng bày với các hiện vật có giá trị lịch sử. Đến với
-                  Dinh Độc Lập, du khách như được sống lại với trang sử hào hùng
-                  của những ngày toàn dân chiến đấu, khoảnh khắc chiếc xe tăng
-                  tiến vào Dinh Độc Lập giơ lên lá cờ giải phóng miền Nam, thống
-                  nhất đất nước.
-                </p>
-              </div>
               <div class="col-md-4">
                 <img
-                  src="./img/dinhoclap.jpg"
-                  alt="baotangchungtichchientranh"
+                  src="./img/hoatdong/denkeoquan.jpg"
+                  alt="chu_cuoi"
                   class="img-fluid rounded-4 shadow-sm"
                 />
+              </div>
+              <div class="col-md-8">
+                <p>
+                  Sự tích Trung thu mẹ kể cho bé không thể thiếu câu chuyện về chiếc đèn kéo quân. Tương truyền vào gần dịp tết Trung thu, nhà vua mở hội thi khéo tay khắp cả nước. Bấy giờ, tại ngôi làng nghèo khó nhất, chàng Lục Đức nằm mơ thấy vị thần râu tóc bạc phơ xuất hiện và phán rằng:
+
+- Thái Thượng Lão Quân ta thấy người nghèo khó nhưng rất hiếu thảo với mẹ. Cho nên, hôm nay qua đây bày cách cho nhà người làm chiếc đèn tiến vua.
+
+Thời gian trôi mau, khi đèn làm xong thì ngày rằm cũng tới. Dân chúng khắp nơi tiến dâng vật phẩm chế tác nhưng không ai làm vua hài lòng. Chỉ đến khi thấy chiếc đèn vừa là lạ, nhiều màu sắc, nhà vua tò mò hỏi ý nghĩa. Lục Đức theo lời Thái Thượng Lão Quân tâu:
+
+- Muôn tâu bệ hạ, thân trúc giữa đèn đại diện cho trục khôn, chong chóng quay 6 mặt chiếc đèn biểu tượng 6 cảm xúc của con người: thương, ghét, giận, hờn, buồn, vui. Con người thay đổi căn do là đạo làm người chưa tới. Bởi vậy cần ánh sáng soi tỏ để người người sống tốt lành, có đạo đức.
+
+Đèn đốt lên làm quay chong chóng. Hình ảnh nhà vua, quan và ngựa nối đuôi nhau quay vòng. Vua cảm động lắm, liền thưởng mẹ con Lục Đức rất hậu và phong làm Vạn Hộ Hầu.
+                </p>
               </div>
             </div>
           </div>
@@ -250,24 +257,13 @@
       <section id="calendar" class="resume">
         <div class="container">
           <div class="section-title">
-            <h2>LỊCH HOẠT ĐỘNG</h2>
+            <h2>CHƯƠNG TRÌNH HOẠT ĐỘNG VỚI CHỦ ĐỀ :'ĐÊM TRĂNG CÙNG BÉ'</h2>
             <p>Một số nội dung chính trong sinh hoạt hè</p>
           </div>
 
           <div class="row">
             <div class="col-lg-6" data-aos="fade-up">
-              <h3 class="resume-title">Lịch sinh hoạt định kì</h3>
-              <div class="resume-item pb-0">
-                <h4>Trò chơi sinh hoạt tập thể</h4>
-                <p>
-                  <em>Giúp các em có thể mạnh dạnh hơn trong các hoạt động</em>
-                </p>
-                <ul>
-                  <li>Lê Quang Duy</li>
-                  <li>(123) 456-7891</li>
-                  <li>Leduy@example.com</li>
-                </ul>
-              </div>
+              
 
               <h3 class="resume-title">Giáo dục</h3>
               <div class="resume-item">
@@ -342,13 +338,10 @@
                   <h4>Call:</h4>
                   <p>+1 5589 55488 55s</p>
                 </div>
-
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.935538640177!2d106.69534244682552!3d10.813713443992967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528ea3453bc07%3A0xfb0492128d35247f!2zVsO1IFRpw6puIFPGsA!5e0!3m2!1sen!2s!4v1684488678400!5m2!1sen!2s"
-                  frameborder="0"
-                  style="border: 0; width: 100%; height: 290px"
-                  allowfullscreen
-                ></iframe>
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.0915184872174!2d105.93638377574554!3d10.173216289941161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a07918c9358c49%3A0x23a0382e512e3eda!2sC%C3%B4ng%20Ty%20TNHH%20C%C3%B4ng%20Nghi%E1%BB%87p%20TOWA%20-%20Chi%20nh%C3%A1nh%20Southern%20Star!5e0!3m2!1sen!2s!4v1686033701562!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                
               </div>
             </div>
 
@@ -359,56 +352,13 @@
                 role="form"
                 class="php-email-form"
               >
-                <div class="row">
-                  <div class="form-group col-md-6">
-                    <label for="name">Your Name</label>
-                    <input
-                      type="text"
-                      name="name"
-                      class="form-control"
-                      id="name"
-                      required
-                    />
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="name">Your Email</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      name="email"
-                      id="email"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="name">Subject</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="subject"
-                    id="subject"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="name">Message</label>
-                  <textarea
-                    class="form-control"
-                    name="message"
-                    rows="10"
-                    required
-                  ></textarea>
-                </div>
-                <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">
-                    Your message has been sent. Thank you!
-                  </div>
-                </div>
+                >
+                
+                
+                
                 <div class="text-center">
-                  <button type="submit">Send Message</button>
+                  <h1>Lưu ý: Trong việc đăng ký. Khi đã đăng kí thì chắc chắn phải tham gia mới nhận được quà. Không tham gia thì sẽ không được nhận không được nhận dùm. Với mục đích BTC muốn trao quà đúng người và tạo sân chơi hữu ích cho các em.</h1>
+                  <button type="submit">Đăng ký tham gia tại đây</button>
                 </div>
               </form>
             </div>
